@@ -1,1 +1,154 @@
-.vscode/
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novera</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="/" class="header__brand">
+          <img
+            src="images/logo.svg"
+            alt="Логотип Novera"
+            class="header__logo"
+          />
+          <span class="header__title">Novera</span>
+        </a>
+
+        <nav class="header__nav">
+          <ul class="menu">
+            <li class="menu__item has-dropdown">
+              <a href="#">Каталог</a>
+              <ul class="dropdown">
+                <li><a href="#">Авторские</a></li>
+                <li><a href="#">Английские</a></li>
+                <li><a href="#">Японские</a></li>
+                <li><a href="#">Корейские</a></li>
+                <li><a href="#">Китайские</a></li>
+                <li><a href="#">Переводы фанфиков</a></li>
+                <li><a href="#">Авторские фанфики</a></li>
+                <li><a href="#">Коллекции</a></li>
+                <li><a href="#">Полный список</a></li>
+              </ul>
+            </li>
+            <li class="menu__item has-dropdown">
+              <a href="#">Сообщество</a>
+              <ul class="dropdown">
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Рецензии</a></li>
+                <li><a href="#">Анонсы</a></li>
+                <li><a href="#">Пользователи</a></li>
+                <li><a href="#">Команды</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Discord</a></li>
+              </ul>
+            </li>
+            <li class="menu__item search-form">
+              <form action="/search" method="GET" target="_blank">
+                <input
+                  type="text"
+                  name="q"
+                  class="search-input"
+                  placeholder="Поиск..."
+                  required
+                />
+                <button type="submit" class="search-button">>></button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="theme-toggle" aria-label="Переключить тему">
+            <img
+              src="images/sun.svg"
+              class="theme-icon sun"
+              alt="Светлая тема"
+            />
+            <img
+              src="images/moon.svg"
+              class="theme-icon moon"
+              alt="Темная тема"
+            />
+          </button>
+          <a href="#" class="btn">Войти | Регистрация</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="books-section">
+        <h2 class="section-title">Популярные</h2>
+        <div class="books-grid" id="popular-books"></div>
+      </section>
+
+      <section class="books-section">
+        <h2 class="section-title">Новинки</h2>
+        <div class="books-grid" id="new-books"></div>
+      </section>
+    </main>
+
+    <!-- Добавить перед закрывающим тегом </body> -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Колонка "О проекте" -->
+          <div class="footer-col">
+            <h3 class="footer-title">О проекте</h3>
+            <ul class="footer-list">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Правила сайта</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li><a href="#">Для правообладателей</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Написать в поддержку</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка "Навигация" -->
+          <div class="footer-col">
+            <h3 class="footer-title">Навигация</h3>
+            <ul class="footer-list">
+              <li><a href="#">Каталог новелл</a></li>
+              <li><a href="#">Популярные</a></li>
+              <li><a href="#">Справка</a></li>
+              <li><a href="#">Правила оформления книг</a></li>
+              <li><a href="#">Предложить улучшение</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка "Связаться с нами" -->
+          <div class="footer-col">
+            <h3 class="footer-title">Связаться с нами</h3>
+            <div class="social-icons">
+              <a href="#" class="social-link" aria-label="Telegram">
+                <img src="images/telegram.svg" alt="Telegram" />
+              </a>
+              <a href="#" class="social-link" aria-label="Discord">
+                <img src="images/discord.svg" alt="Discord" />
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/render.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
