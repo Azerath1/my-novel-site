@@ -9,6 +9,9 @@
   --icon-color: #f6b93b;
   --footer-bg: #f5f5f5;
   --accent-color: #2c3e50;
+  --card-bg: #ffffff;
+  --input-bg: #f5f5f5;
+  --border-color: #ddd;
 }
 
 [data-theme="dark"] {
@@ -22,6 +25,9 @@
   --icon-color: #fad390;
   --footer-bg: #2d2d2d;
   --accent-color: #ecf0f1;
+  --card-bg: #2d2d2d;
+  --input-bg: #3d3d3d;
+  --border-color: #444;
 
   .book-author {
     color: #aaa;
@@ -34,5 +40,9 @@
 
   .book-card {
     border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .form-wrapper {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
   }
 }
