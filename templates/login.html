@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Войти</title>
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="post">
+        <h1>Войти</h1>
+        <div class="input-box">
+          <input type="text" name="username" placeholder="Имя" required />
+          <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            name="password"
+            placeholder="Пароль"
+            required
+          />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <div class="remember">
+          <label for=""><input type="checkbox" />Запомни меня</label>
+          <a href="#">Забыли пароль?</a>
+        </div>
+
+        <button type="submit" class="btn">Войти</button>
+
+        <div class="register-link">
+          <p>У вас нет аккаунта? <a href="/templates/register.html">Зарегистрироваться</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
